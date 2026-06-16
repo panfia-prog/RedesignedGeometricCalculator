@@ -6,6 +6,15 @@ public class Circle extends Shape{
     }
 
 
+    @Override
+    public double calculateArea(){
+        return Math.PI*(radius * radius);
+    }
+
+    public double calculatePerimeter(){
+        return 2*Math.PI*radius;
+    }
+
     // super keyword can also be used to call overridden method from parent class:
     @Override
     public String toString(){
@@ -13,3 +22,6 @@ public class Circle extends Shape{
         return super.toString() + String.format("Circle Radius: %.2f", radius);
     }
 }
+
+
+
