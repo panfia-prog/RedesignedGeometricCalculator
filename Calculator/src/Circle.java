@@ -1,19 +1,13 @@
-public class Circle extends Shape{
+public class Circle extends Shape implements Measurable2D{
     private double radius;
     public Circle(double radius, String color) {
         super(color); //alternative to this.color and calls Shape and must ALWAYS be FIRST
         this.radius = radius;
     }
 
+    public double calculateArea(){return Math.PI*(radius * radius);}
 
-    @Override
-    public double calculateArea(){
-        return Math.PI*(radius * radius);
-    }
-
-    public double calculatePerimeter(){
-        return 2*Math.PI*radius;
-    }
+    public double calculatePerimeter(){return 2*Math.PI*radius;}
 
     // super keyword can also be used to call overridden method from parent class:
     @Override
@@ -23,5 +17,14 @@ public class Circle extends Shape{
     }
 }
 
-
+//used to check if each shape works as intended
+void main(){
+    double inputRadius = Double.parseDouble(IO.readln("Enter the radius: "));
+    String inputColor = IO.readln("Enter the color: ");
+    Circle circle = new Circle(inputRadius, inputColor);
+    IO.println("Area of the Circle: " + circle.calculateArea());
+    IO.println("Perimeter of the Circle: " + circle.calculatePerimeter());
+    IO.println("Color of the Circle: " + circle.getColor());
+    IO.println(circle.toString());
+}
 

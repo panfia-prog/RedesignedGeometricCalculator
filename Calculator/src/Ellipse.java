@@ -7,12 +7,10 @@ public class Ellipse extends Shape{
         this.semiMinor = semiMinor;
     }
 
-    @Override
     public double calculateArea(){
         return Math.PI*semiMajor*semiMinor;
     }
 
-    @Override
     public double calculatePerimeter(){
         double p;
         // [UNDERSTAND] Declared the 'h' value as the formula shown
