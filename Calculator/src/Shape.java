@@ -13,6 +13,6 @@ public abstract class Shape {
     //String returns shape color
     @Override
     public String toString(){
-        return String.format("Shape color: %s ", color);
+        return String.format("Shape color: %s \n", color);
     }
 }

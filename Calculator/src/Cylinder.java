@@ -16,6 +16,16 @@ public class Cylinder extends Shape implements Measurable3D{
 
     @Override
     public String toString() {
-        return super.toString() + String.format(" Cylinder Radius: %.2f, Height: %.2f", radius, height);
+        return super.toString() + String.format("Cylinder Radius: %.2f, Height: %.2f", radius, height);
     }
+}
+void main(){
+    double inputLength = Double.parseDouble(IO.readln("Enter the length: "));
+    double inputHeight = Double.parseDouble(IO.readln("Enter the height: "));
+    String inputColor = IO.readln("Enter the color: ");
+    Cylinder shape = new Cylinder(inputLength, inputHeight, inputColor);
+    IO.println("Surface Area: " + shape.calculateSurfaceArea());
+    IO.println("Volume: " + shape.calculateVolume());
+    IO.println("Color: " + shape.getColor());
+    IO.println(shape.toString());
 }

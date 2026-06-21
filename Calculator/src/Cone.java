@@ -17,6 +17,17 @@ public class Cone extends Shape implements Measurable3D{
 
     @Override
     public String toString() {
-        return super.toString() + String.format(" Cylinder Radius: %.2f, Height: %.2f", radius, height);
+        return super.toString() + String.format("Cone Radius: %.2f, Height: %.2f", radius, height);
     }
+}
+
+void main(){
+    double inputRadius = Double.parseDouble(IO.readln("Enter the radius: "));
+    double inputHeight = Double.parseDouble(IO.readln("Enter the height: "));
+    String inputColor = IO.readln("Enter the color: ");
+    Cone cone = new Cone(inputRadius,  inputHeight, inputColor);
+    IO.println("Surface Area: " + cone.calculateSurfaceArea());
+    IO.println("Volume: " + cone.calculateVolume());
+    IO.println("Color: " + cone.getColor());
+    IO.println(cone.toString());
 }
