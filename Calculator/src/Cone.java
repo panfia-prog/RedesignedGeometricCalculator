@@ -21,13 +21,13 @@ public class Cone extends Shape implements Measurable3D{
     }
 }
 
-void main(){
-    double inputRadius = Double.parseDouble(IO.readln("Enter the radius: "));
-    double inputHeight = Double.parseDouble(IO.readln("Enter the height: "));
-    String inputColor = IO.readln("Enter the color: ");
-    Cone cone = new Cone(inputRadius,  inputHeight, inputColor);
-    IO.println("Surface Area: " + cone.calculateSurfaceArea());
-    IO.println("Volume: " + cone.calculateVolume());
-    IO.println("Color: " + cone.getColor());
-    IO.println(cone.toString());
-}
+//void main(){
+//    double inputRadius = Double.parseDouble(IO.readln("Enter the radius: "));
+//    double inputHeight = Double.parseDouble(IO.readln("Enter the height: "));
+//    String inputColor = IO.readln("Enter the color: ");
+//    Cone cone = new Cone(inputRadius,  inputHeight, inputColor);
+//    IO.println("Surface Area: " + cone.calculateSurfaceArea());
+//    IO.println("Volume: " + cone.calculateVolume());
+//    IO.println("Color: " + cone.getColor());
+//    IO.println(cone.toString());
+//}

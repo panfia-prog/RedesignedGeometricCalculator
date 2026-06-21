@@ -28,16 +28,16 @@ public class Ellipse extends Shape implements Measurable2D{
     }
 }
 
-void main(){
-    double inputSemiMajor = Double.parseDouble(IO.readln("Enter the Semi Major: "));
-    double inputSemiMinor = Double.parseDouble(IO.readln("Enter the Semi Minor: "));
-    String inputColor = IO.readln("Enter the color: ");
-    Ellipse shape = new Ellipse(inputSemiMajor, inputSemiMinor, inputColor);
-    IO.println("Surface Area: " + shape.calculateArea());
-    IO.println("Volume: " + shape.calculatePerimeter());
-    IO.println("Color: " + shape.getColor());
-    IO.println(shape.toString());
-}
+//void main(){
+//    double inputSemiMajor = Double.parseDouble(IO.readln("Enter the Semi Major: "));
+//    double inputSemiMinor = Double.parseDouble(IO.readln("Enter the Semi Minor: "));
+//    String inputColor = IO.readln("Enter the color: ");
+//    Ellipse shape = new Ellipse(inputSemiMajor, inputSemiMinor, inputColor);
+//    IO.println("Surface Area: " + shape.calculateArea());
+//    IO.println("Volume: " + shape.calculatePerimeter());
+//    IO.println("Color: " + shape.getColor());
+//    IO.println(shape.toString());
+//}
 
 
 

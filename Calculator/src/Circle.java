@@ -18,13 +18,13 @@ public class Circle extends Shape implements Measurable2D{
 }
 
 //used to check if each shape works as intended
-void main(){
-    double inputRadius = Double.parseDouble(IO.readln("Enter the radius: "));
-    String inputColor = IO.readln("Enter the color: ");
-    Circle circle = new Circle(inputRadius, inputColor);
-    IO.println("Area: " + circle.calculateArea());
-    IO.println("Perimeter " + circle.calculatePerimeter());
-    IO.println("Color: " + circle.getColor());
-    IO.println(circle.toString());
-}
+//void main(){
+//    double inputRadius = Double.parseDouble(IO.readln("Enter the radius: "));
+//    String inputColor = IO.readln("Enter the color: ");
+//    Circle circle = new Circle(inputRadius, inputColor);
+//    IO.println("Area: " + circle.calculateArea());
+//    IO.println("Perimeter " + circle.calculatePerimeter());
+//    IO.println("Color: " + circle.getColor());
+//    IO.println(circle.toString());
+//}
 

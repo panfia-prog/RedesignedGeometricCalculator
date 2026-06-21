@@ -21,14 +21,14 @@ public class Cuboid extends Shape implements Measurable3D{
     }
 }
 
-void main(){
-    double inputLength = Double.parseDouble(IO.readln("Enter the length: "));
-    double inputWidth = Double.parseDouble(IO.readln("Enter the width: "));
-    double inputHeight = Double.parseDouble(IO.readln("Enter the height: "));
-    String inputColor = IO.readln("Enter the color: ");
-    Cuboid cuboid = new Cuboid(inputLength,  inputWidth, inputHeight, inputColor);
-    IO.println("Surface Area: " + cuboid.calculateSurfaceArea());
-    IO.println("Volume: " + cuboid.calculateVolume());
-    IO.println("Color: " + cuboid.getColor());
-    IO.println(cuboid.toString());
-}
+//void main(){
+//    double inputLength = Double.parseDouble(IO.readln("Enter the length: "));
+//    double inputWidth = Double.parseDouble(IO.readln("Enter the width: "));
+//    double inputHeight = Double.parseDouble(IO.readln("Enter the height: "));
+//    String inputColor = IO.readln("Enter the color: ");
+//    Cuboid cuboid = new Cuboid(inputLength,  inputWidth, inputHeight, inputColor);
+//    IO.println("Surface Area: " + cuboid.calculateSurfaceArea());
+//    IO.println("Volume: " + cuboid.calculateVolume());
+//    IO.println("Color: " + cuboid.getColor());
+//    IO.println(cuboid.toString());
+//}
