@@ -1,24 +1,12 @@
 public class Square extends Rectangle{
-    private double side;
     public Square (double side, String color){
         super(side, side, color);
-        this.side = side;
-
-    }
-
-    public double calculateArea(){
-        return side*side;
-
-    }
-
-    public double calculatePerimeter(){
-        return 4*side;
 
     }
 
     @Override
     public String toString(){
-        return String.format("Square Side: %.2f, Color %s", side, getColor());
+        return String.format("Square Side: %.2f, Color %s", (calculatePerimeter()/4), getColor());
     }
     }
 
