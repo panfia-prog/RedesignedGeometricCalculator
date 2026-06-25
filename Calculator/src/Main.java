@@ -34,7 +34,7 @@ public class Main {
                         System.out.println("4. Ellipse");
                         System.out.println("5. Return to Main Menu"); // Adjusted choices
                         System.out.println("====================================");
-                        System.out.print("Enter your choice (1-6): ");
+                        System.out.print("Enter your choice (1-5): ");
                         choice2D = scanner.nextInt();
                         switch(choice2D){
                             case 1:
